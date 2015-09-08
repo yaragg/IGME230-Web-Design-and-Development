@@ -3,19 +3,35 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Our First Page</title>
+
+	<style>
+	/*All my CSS goes here. CSS comment syntax!*/
+	body { font-family: "Trebuchet MS", Arial, sans-serif; color:yellow; background-color: cyan;}
+	h1 { color:lime; background-color:brown;}
+	p {color:magenta; font-size: 2em;}
+	img {border: 3px dotted red;}
+	.stuff {background-color: darkgray;}
+	#blah {text-decoration: none; font-weight: bolder; letter-spacing: 2em; background-color: darkcyan;}
+	a:hover{color:red;}
+	p:first-letter{color:black;}
+	em {color:red;}
+
+
+	</style>
+	<!-- This is an HTML comment -->
 </head>
 <body>
 	<h1>Welcome!</h1>
 
 	<p>Hello there. This is my first Web page. it is the coolest page ever. Yay.</p>
 
-	<h2>Some of my favorite sites:</h2>
+	<h2>Some of my <em>favorite</em> sites:</h2>
 
 	<ul>
 		<li><a href="http://www.google.com">Google</a></li>
-		<li><a href="http://www.rit.edu">RIT</a></li>
-		<li><a href="http://demongate.darkbolt.com">My Webcomic</a> is here!</li>
-		<li><a href="sub/index.html">Sub-page</a></li>
+		<li><a id="blah" href="http://www.rit.edu">RIT</a></li>
+		<li class="stuff"><a href="http://demongate.darkbolt.com">My Webcomic</a> is here!</li>
+		<li><a class="stuff" href="sub/index.html">Sub-page</a></li>
 	</ul>
 
 	<hr/>
@@ -23,7 +39,7 @@
 	Check them out.
 	<br/>
 
-	<img src="zelthar-dt.jpg" height="100" width="100" alt="A picture of grumpy Zelthar the dark elf."/>
+	<img src="zelthar-dt.jpg" height="200" width="200" alt="A picture of grumpy Zelthar the dark elf."/>
 
 </body>
 </html>
