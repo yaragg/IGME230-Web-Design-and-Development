@@ -17,6 +17,37 @@
       padding-top: 0.3em;
       padding-bottom: 0.3em;
       text-align: center;
+      border: 3px dotted black;
+    }
+    li {
+      margin-top: 0.6em;
+    }
+    .ingredients {
+      background-color: lightgray;
+      width: 250px;
+      list-style-type: circle;
+      padding-top: 0.2em;
+      padding-bottom: 0.3em;
+      padding-right: 0.5em;
+    }
+    img { float: right; clear: both;}
+    .important {
+      color: red;
+      font-size: 110%;
+      background-color: yellow;
+    }
+    #footer {
+      background-color: #FFEBD6;
+    }
+    #footer a{
+      color: lightgray;
+      
+    }
+    #footer a:hover{
+      color:red;
+    }
+    ol li:first-letter{
+      color:darkred;
     }
   </style>
 
@@ -25,8 +56,8 @@
 <body>
 <div id="content">
 <h1>Ararat Home Kadayif</h1>
+       <p style="float: right; font-weight: bold">Yield: 24 servings</p>
 <img src="Kadayif.jpg" width="330" height="250" title="Kadayif" alt="Photo of kadayif dish" />
-       <p>Yield: 24 servings</p>
   <h2>Ingredients</h2>
   <ul class="ingredients">
   	<li>2 lb Kadayif dough(Shredded Filo)</li>
@@ -57,18 +88,18 @@
      butter and mix with hands until strands are evenly coated. Spread over
      top of cream layer, pressing down firmly to form an even surface.</li>
      
-    <li> Place on lowest oven rack and bake at 450 degrees F. until golden brown,
+    <li> <span class="important">Place on lowest oven rack</span> and bake at 450 degrees F. until golden brown,
      about 20-25 minutes. If not golden, move pan to top rack and bake 5 to
      10 minutes longer.</li>
      
     <li> Meanwhile, prepare syrup. Combine sugar and water in saucepan and boil
-     5 to 10 minutes. Add lemon juice. Cool. Pour cold syrup evenly over
+     5 to 10 minutes. Add lemon juice. <span class="important">Cool.</span>  Pour cold syrup evenly over
      kadayif as soon as it is removed from the oven. </li>
      
     <li> Cut into squares to serve. Enjoy!</li>
    </ol>
 
- <footer>
+ <footer id="footer">
   <p><a href="http://www.recipesource.com/ethnic/africa/middle-east/armenian/ararat-home-kadayif1.html">source: http://www.recipesource.com/ethnic/africa/middle-east/armenian/ararat-home-kadayif1.html</a></p>
   <p><a href="../../index.html">My Home Page</a></p>
   </footer>
