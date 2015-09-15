@@ -1,0 +1,46 @@
+body{
+	background-color: #C5A3FF;
+	font-family: Arial, sans-serif;
+	color: #522F61;
+}
+
+h1{
+	font-weight: bold;
+	color: #401E3F;
+	font-size: 250%;
+	text-align: center;
+}
+
+h2{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a{
+	color: #E3387C;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #736A69;
+}
+
+a:hover{
+	color: #E38058;
+	text-decoration: underline;
+}
+
+a:active{
+	color: #E482CC;
+}
+
+figcaption{
+	font-style: italic;
+	font-size: 80%;
+	margin-top: 2%;
+}
+
+figure{
+	float: right;
+	margin-right: 5%;
+}
