@@ -1,3 +1,7 @@
+.print-only{
+	display: none;
+}
+
 body{
 	background-color: #C5A3FF;
 	font-family: Arial, sans-serif;

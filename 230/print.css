@@ -1,0 +1,20 @@
+.screen-only{
+	display: none;
+}
+
+body{
+	font-family: "Times New Roman", serif;
+	color: black;
+	background-color: white;
+}
+
+h1{
+	font-weight: bold;;
+	font-size: 200%;
+	text-align: center;
+}
+
+h2{
+	font-weight: bold;
+	text-decoration: underline;
+}

@@ -3,28 +3,13 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Yara's First Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-<!--	<style>
-		body{
-			font-family: "Trebuchet MS", Arial, sans-serif; 
-		}
-		.ice-list {
-			background-color: lightgray;
-			padding-bottom: 0.3em;
-			padding-top: 0.3em;
-			padding-left: 0.5em;
-			width: 250px;
-			border: 2px dotted black;
-		}
-		h3{
-			color:red;
-		}
-	</style>-->
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="print.css" />
 </head>
 <body>
 	<h1>RIT IGME-230 Web Design and Implementation</h1>
 	
-	<figure>
+	<figure class="screen-only">
 		<img src="pic.jpg" title="I need a better pic" alt="A very meh picture of myself because I have no decent ones that aren't 5 years old." width="364" height="500" />
 		<br />
 		<figcaption>Oh god why.</figcaption>
@@ -35,7 +20,7 @@
 
 	
 
-	<div class="ice-list">
+	<div class="ice-list screen-only">
 		<h3>ICEs</h3>
 		<ul>
 			<li><a href="ice/recipe/kadayif.html">Recipe ICE</a></li>
@@ -44,28 +29,49 @@
 		</ul>
 	</div>
 
-	<h3>Projects</h3>
-	<ul>
-		<li><a href="project1/index.html">Project 1</a></li>
-		<li><a href="project2/index.html">Project 2</a></li>
-		<li><a href="project3/index.html">Project 3</a></li>
-	</ul>
+	<div class="ice-list print-only">
+		<h3>ICEs</h3>
+		<ul>
+			<li>ice/recipe/kadayif.html (Recipe ICE)</li>
+			<li>ice/tables/tables.html (Tables ICE)</li>
+			<li>ice/cssp/cssp.html (CSSP ICE)</li>
+		</ul>
+	</div>
 
+	<div class="screen-only">
+		<h3>Projects</h3>
+		<ul>
+			<li><a href="project1/index.html">Project 1</a></li>
+			<li><a href="project2/index.html">Project 2</a></li>
+			<li><a href="project3/index.html">Project 3</a></li>
+		</ul>
+	</div>
 
-	<p><a href="http://people.rit.edu/spbics/230-02.shtml">Instructor’s class site</a></p>
+	<p class="screen-only"><a href="http://people.rit.edu/spbics/230-02.shtml">Instructor’s class site</a></p>
+	<p class="print-only">http://people.rit.edu/spbics/230-02.shtml (Instructor's class site)</p>
 	<div>This is inside a div</div>
 
 	<p>Some of my favorite websites:</p>
-	<a href="http://tvtropes.org">TV Tropes</a><br/>
-	<a href="http://www.gaiaonline.com">Gaia Online</a><br/>
-	<a href="http://store.steampowered.com/">Steam</a><br/>
+	<div class="screen-only">
+		<a href="http://tvtropes.org">TV Tropes</a><br/>
+		<a href="http://www.gaiaonline.com">Gaia Online</a><br/>
+		<a href="http://store.steampowered.com/">Steam</a><br/>
+	</div>
+	<div class="print-only">
+		http://tvtropes.org (TV Tropes)<br/>
+		http://www.gaiaonline.com (Gaia Online)<br/>
+		http://store.steampowered.com/ (Steam)<br/>
+	</div>
 
-	<p>Some pages!</p>
-	<ul>
-	<li><a href="exercises/movies.html">Movies</a></li>
-	<li><a href="exercises/recipe.html">Recipe</a></li>
-	</ul>
-	
+
+	<div class="screen-only">
+		<p>Some pages!</p>
+		<ul>
+		<li><a href="exercises/movies.html">Movies</a></li>
+		<li><a href="exercises/recipe.html">Recipe</a></li>
+		</ul>
+	</div>
+
 	<p>My career interests are</p>
 	<ul>
 		<li>Video game development</li>
