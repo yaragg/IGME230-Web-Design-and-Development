@@ -71,10 +71,20 @@ header nav li{
 	float: left;
 	margin-bottom: 15px;
 	width: 100%;
+	background-color: #ddd;
 }
 
 #banner img{
 	width: 100%;
+}
+
+#dialog{
+	color: black;
+	padding: 0.5em;
+}
+
+#dialog hr{
+	margin: 1em;
 }
 
 
