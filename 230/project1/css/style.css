@@ -32,7 +32,6 @@ body{
 h1{
 	text-align: center;
 	width: 100%;
-	/*background-color: #f3d37c;*/
 	font-family: 'Aquiline', serif;
 	letter-spacing: 0.1em;
 	font-size: 290%;
@@ -42,7 +41,6 @@ h1{
 	margin-top: 0;
 	background-image: url("../media/banner.png");
 	background-size: 100%;
-	/*background-repeat: no-repeat;*/
 }
 
 h2{
@@ -59,66 +57,50 @@ h3{
 	font-size: 130%;
 }
 
+li a{
+	width: 100%;
+}
+
+
 nav{
 	position: fixed;
-	/*float: left;*/
 	background-color: #ebce94;
-	/*padding-right: 5%;
-	padding-left: 2%;*/
-	padding-left: 3%;
-	padding-right: 3%;
 	padding-bottom: 3%;
-	/*padding-top: 2%;*/
 	border-radius: 15px;
-	margin-left: 3%;
-	/*border: 7px double #8A5712;	*/
-	border: 1px solid #8A5712;	
+	left: 3%;
+	border: 1px solid #8A5712;
+	width: 20%;
 }
-
-nav ul{
-	list-style-type: none;
-	text-align: center;
-}
-
-nav li{
+nav p{
 	margin-bottom: 1em;
-	/*width: 100%;*/
+	text-align: center;
 	border-top: 1px dashed #8A5712;
 	border-bottom: 1px dashed #8A5712;
-	/*padding-right: 99%;*/
-	margin-right: -62%;
-	margin-left: -125%;
-	/*margin-left: -50%;*/
-	/*margin-left: -50%;
-	margin-right: 50%;*/
 	margin-bottom: 0;
-	/*margin-top: -15%;*/
-	padding-bottom: 5%;
-	padding-top: 5%;
+
 	margin-top: -1px; /*Trick for collapsing borders*/
-	/*padding-left: 20%;*/
-	text-align: center;
+	display: block;
 }
 
 #current{
 	background-color: #FFF295;
 }
 
-nav li:hover, #current:hover{
+nav p:hover, #current:hover{
 	background-color: #E0D583;
 }
 
 nav h3{
 	text-align: center;
 	width: 100%;
-	margin-bottom: -5%;
-	/*padding-left: 17%;*/
 }
 
 nav a{
-	text-decoration: none;
-	color: #8A5712;
 	text-align: center;
+	width: 100%;
+	display: block;
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
 
 
@@ -128,26 +110,34 @@ nav a{
 	float: right;
 	width: 70%;
 	margin-right: 5%;
-	background-color: 
 }
 
 .section{
 	background-color: white;
 	padding-bottom: 5%;
-	/*padding-top: 0.5em;*/
 	padding-left: 2%;
 	padding-top: 1%;
 	margin-bottom: 2%;
 	border-radius: 15px;
+	width: 100%;
 }
 
 .thumbnail{
 	position: relative;
 	float: right;
-	width: 22%;
-	height: 22%;
-	margin-right: 5%;
 	margin-bottom: 5%;
+	margin-right: 2%;
+	width: 20%;
+	height: 20%;
+}
+
+.thumbnail img{
+	width: 88%;
+	height: 88%;
+}
+
+.thumbnail a{
+	width: 100%;
 }
 
 ol li{
@@ -155,16 +145,33 @@ ol li{
 	width: 100%;
 }
 
-li a{
-	width: 100%;
+
+
+.section ul, .section ul li{
+	max-width: 100%;
 }
+
 
 .section ul li{
 	list-style-type: circle;
+	margin-bottom: 2%;
 }
 
 .step, .explanation{
 	max-width: 70%;
+}
+
+
+.section ol{
+	color:  #8A5712;
+}
+
+.section ol li{
+	margin-bottom: 4%;
+}
+
+.explanation{
+	color: black;
 }
 
 #compass{
@@ -173,3 +180,49 @@ li a{
 	top: -20%;
 }
 
+footer{
+	display: none;
+}
+
+a{
+	text-decoration: none;
+	color: #8A5712;
+}
+
+@media screen and (max-width: 480px) {
+	nav{
+		position: static;
+		width: 100%;
+	}
+
+	.column{
+		width: 100%;
+		float: left;
+		clear: left;
+		margin: 0;	
+
+	}
+	.section{
+		max-width: 100%;
+		margin-bottom: 7%;
+	}
+
+	.section ol li{
+		margin-bottom: 15%;
+	}
+
+	footer{
+		display: block; 
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background-color: #ebce94;
+		text-align: center;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.step, .explanation{
+		max-width: 100%;
+	}
+
+}
