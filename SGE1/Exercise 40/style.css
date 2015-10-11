@@ -1,0 +1,16 @@
+#part1{
+	background-color: blue;
+
+}
+
+@media screen and (max-width: 720px){
+	#part1{
+		background-color: red;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#part1{
+		background-color: green;
+	}
+}
