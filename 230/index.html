@@ -5,6 +5,7 @@
 	<title>Yara's First Page</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 	<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<h1>RIT IGME-230 Web Design and Implementation</h1>
@@ -49,10 +50,10 @@
 
 	<div class="screen-only">
 		<h3>Projects</h3>
-		<ul>
-			<li><a href="project1/index.html">Project 1</a></li>
-			<li><a href="project2/index.html">Project 2</a></li>
-			<li><a href="project3/index.html">Project 3</a></li>
+		<ul id="projects">
+			<li><a href="project1/index.html" id="proj1" class="proj-btn" onmouseover="buttonChange('proj1', 'images/button-down.png');" onmouseout="buttonChange('proj1', 'images/button-up.png');"><span class="btn-text">Project 1</span></a></li>
+			<li><a href="portfolio/index.html" id="proj2" class="proj-btn" onmouseover="buttonChange('proj2', 'images/button-down.png');" onmouseout="buttonChange('proj2', 'images/button-up.png');">Project 2</a></li>
+			<li><a href="project3/index.html" id="proj3" class="proj-btn" onmouseover="buttonChange('proj3', 'images/button-down.png');" onmouseout="buttonChange('proj3', 'images/button-up.png');">Project 3</a></li>
 		</ul>
 	</div>
 
