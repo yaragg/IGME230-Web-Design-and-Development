@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Kingthings';
+    src: url('../fonts/Kingthings_Calligraphica_2-webfont.eot');
+    src: url('../fonts/Kingthings_Calligraphica_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kingthings_Calligraphica_2-webfont.woff') format('woff'),
+         url('../fonts/Kingthings_Calligraphica_2-webfont.ttf') format('truetype'),
+         url('../fonts/Kingthings_Calligraphica_2-webfont.svg#kingthings_calligraphica_2Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: sans-serif;
+	/*background-color: #FFDCED;*/
+	background-image: url('../images/sky.png');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1{
+	/*color: #6D2972;*/
+	font-size: 450%;
+	color: white;
+    text-shadow:
+	    -1px -1px 0 #420246,
+	    1px -1px 0 #420246,
+	    -1px 3px 0 #420246,
+	    3px 1px 0 #420246; 
+	text-align: center;
+	font-family: 'Kingthings', sans-serif;
+	letter-spacing: 0.03em;
+	word-spacing: 0.15em;
+}
+
+h2{
+	color: #923460;
+}
+
+em{
+	color: #AA3C44;
+	font-style: normal;
+}
+
+a{
+	color: #6D2972;
+}
+
+ul{
+	list-style-type: circle;
+}
+
+li{
+	margin-bottom: 1%;
+}
+
+section{
+	max-width: 55%;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.65);
+	padding-bottom: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	margin-bottom: 2%;
+	border-radius: 15px;
+	line-height: 1.3em;
+}
+
+img{
+	display: block;
+	margin: auto;
+	margin-bottom: 2%;
+	box-shadow: 7px 7px 5px #854889;
+}
+
+footer{
+	text-align: center;
+	color: #56125B;
+}
