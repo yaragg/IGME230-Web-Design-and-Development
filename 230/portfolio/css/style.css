@@ -83,7 +83,7 @@ section{
 	margin-bottom: 2%;
 	box-shadow: 7px 7px 5px #854889;
 	border-radius: 15px;
-	
+
 }
 
 footer{
@@ -173,15 +173,24 @@ figure{
 	text-align: center;
 	position: relative;
 	border-radius: 15px;
+	width: 256px;
+	height: 192px;
+	float: left;
+	margin: 0.5em 0.5em;
 
 }
 
 #bots{
 	background-image: url('../images/bots_thumb.png');
-	width: 256px;
-	height: 192px;
 }
 
+#dungeon{
+	background-image: url('../images/dungeon_thumb.png');
+}
+
+#asteroids{
+	background-image: url('../images/asteroids_thumb.png');
+}
 
 .project .pic-link{
 	position: absolute;
