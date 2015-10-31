@@ -31,6 +31,8 @@ h1{
 	font-family: 'Kingthings', sans-serif;
 	letter-spacing: 0.03em;
 	word-spacing: 0.15em;
+	margin-bottom: 0.2em;
+	margin-top: 0.3em;
 }
 
 h2{
@@ -65,9 +67,17 @@ section{
 	margin-bottom: 2%;
 	border-radius: 15px;
 	line-height: 1.3em;
+	overflow: hidden;
 }
 
-img{
+#profile{
+	float: right;
+	border-radius: 40px;
+/*	padding: 1em 0.2em;
+	margin-left: 0.5em;*/
+}
+
+.screenshot{
 	display: block;
 	margin: auto;
 	margin-bottom: 2%;
@@ -77,4 +87,77 @@ img{
 footer{
 	text-align: center;
 	color: #56125B;
+}
+
+nav{
+	text-align: center;
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	left: -50%;
+}
+
+nav ul li{
+	display: inline;
+
+}
+
+nav ul li a{
+	width: 5em;
+	/*padding-left: 0.75em;
+	padding-right: 0.75em;*/
+	padding: 0.3em 0.75em;
+	background-color: rgba(255, 255, 255, 0.65);
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #6D2972;
+	
+}
+
+nav ul li a:hover, #current:hover{
+	background-color: rgba(211, 206, 232,0.65);
+}
+
+#current{
+	background-color: rgba(239, 221, 230,0.65);
+}
+
+/*nav ul li ul{
+	display: none;
+}
+
+nav ul li > ul li a{
+	float: none;
+}
+
+nav ul li:hover > ul{
+	display: block;
+	float: left;
+}*/
+
+.last{
+	border-right: none;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.first{
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+}
+
+
+#center-wrapper{
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+#wrapper{
+	overflow: hidden;
+	margin-bottom: 1em;
 }
