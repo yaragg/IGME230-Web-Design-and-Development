@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>
+		Images Demo
+	</title>
+	<style type="text/css">
+		.picture{width: 50%;}
+
+		#thing1{
+			background-image: url('Bastet.png');
+			width: 100%;
+			height: 200px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		#thing2{
+			background-image: url('Bastet.png');
+			width: 100%;
+			height: 200px;
+			background-size: cover;
+		}
+
+		#button1{
+			background-image: url("Button-up.jpg");
+			width: 75px;
+			height: 32px;
+			display: block;
+		}
+
+		#button1:hover{
+			background-image: url("Button-down.jpg");
+		}
+
+		.preload{display:none;}
+	</style>
+</head>
+<body>
+	<img class="picture" src="Bastet-small.png" alt="A planet in SPACE!" />
+
+	<div id="thing1"></div>
+	<div id="thing2"></div>
+	<img class="preload" src="Button-down.jpg" />
+	<a id="button1" href="http://www.google.com"></a>
+</body>
+</html>
