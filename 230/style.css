@@ -48,3 +48,32 @@ figure{
 	float: right;
 	margin-right: 5%;
 }
+
+
+#projects li{
+	margin-bottom: 2%;
+	width: 100%;
+	list-style: none;
+}
+
+.proj-btn{
+	padding: 1%;
+	padding-right: 1.2%;
+	background-image: url("images/button-up.png");
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: #ff99cc;
+}
+
+.proj-btn:hover, .proj-btn:visited{
+	text-decoration: none;
+	color: #ff99cc;
+}
+
+.btn-text{
+	text-align: center;
+	margin: auto;
+}
