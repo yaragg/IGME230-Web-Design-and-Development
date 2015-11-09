@@ -12,14 +12,12 @@
 
 body{
 	font-family: sans-serif;
-	/*background-color: #FFDCED;*/
 	background-image: url('../images/sky.png');
 	background-attachment: fixed;
 	background-size: cover;
 }
 
 h1{
-	/*color: #6D2972;*/
 	font-size: 450%;
 	color: white;
     text-shadow:
@@ -73,7 +71,6 @@ section{
 #profile{
 	float: right;
 	border-radius: 40px;
-/*	padding: 1em 0.2em;
 	margin-left: 0.5em;*/
 }
 
@@ -110,8 +107,6 @@ nav ul li{
 
 nav ul li a{
 	width: 5em;
-	/*padding-left: 0.75em;
-	padding-right: 0.75em;*/
 	padding: 0.3em 0.75em;
 	background-color: rgba(255, 255, 255, 0.65);
 	text-decoration: none;
@@ -127,19 +122,6 @@ nav ul li a:hover, #current:hover{
 #current{
 	background-color: rgba(239, 221, 230,0.65);
 }
-
-/*nav ul li ul{
-	display: none;
-}
-
-nav ul li > ul li a{
-	float: none;
-}
-
-nav ul li:hover > ul{
-	display: block;
-	float: left;
-}*/
 
 .last{
 	border-right: none;
