@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>JavaScript Fun</title>
+	<style type='text/css'>
+		.palette {
+			float: left;
+			height: 50px;
+			width: 100px;
+		}
+	</style>
+	<script type='text/javascript'>
+	</script>
+</head>
+<body>
+	<div id='palette-div' style='border:2px solid white; float:left;'>&nbsp;</div>
+	<div id='color-div' style='clear:both; position:relative; left:0;'>&nbsp;</div>
+
+	<script type='text/javascript'>
+		//<![CDATA[
+		
+		// 1. Define an array with indexes for at least 8 colors.
+		var colorArr = ["170, 150, 57", "170, 108, 57", "170, 57, 57", "88, 42, 114", "45, 68, 113", "34, 102, 102", "45, 136, 45", "116, 157, 52"];
+		
+		// 2. Iterate through the colors array, creating a div with class 'palette' for each.
+		//		Add each of these divs to the palette variable as a string - this will be your palette.
+		// 3.	Add an inline style for each div (within the for loop) so that the background color  
+		//		of the div corresponds to the current index of the colors array.
+		// 4. Add an event listener to each div so that setBgColor() will be called when 
+		//		the div is clicked. Pass 'this' as a parameter (without quotes) to setBgColor()
+		//		so that the function knows which div was clicked.
+		var palette = "";
+
+		for (var i = 0; i < colorArr.length; i++) {
+			palette += "<div class='palette' style='background-color: rgb("+colorArr[i]+"); padding: 10px;' onclick='setBgColor(this);'></div>";
+		};
+
+		// 5. Add the palette variable as the contents of the 'palette-div' div.
+		//		(You can use innerHTML for this).
+		document.getElementById("palette-div").innerHTML += palette;
+		
+		function setBgColor( clickedDiv ) {
+			// 6. Create a variable that's equal to the background color of clickedDiv
+			var color = clickedDiv.style.backgroundColor;
+
+			// 7. Set the contents of 'color-div' equal to the variable in (6). 
+			//		The RGB value should be displayed in 'color-div', not the color 
+			//		itself. (You can use innerHTML for this step)
+			document.getElementById("color-div").innerHTML = color;
+
+			// 8. Set the background color of the entire page to be background color of clickedDiv.
+			document.querySelector("body").style.backgroundColor = color;
+			
+			// 9. Now, just for fun, move 'color-div' 10px to the right every time a 
+			//		colored div is clicked. Don't forget that you'll need to convert the CSS
+			//		'left' property value to an int before adding 10 to it.
+			var prev = document.getElementById("color-div").style.left;
+			document.getElementById("color-div").style.left = parseInt(prev) + 10 + "px";
+		}
+		
+		//]]>
+	</script>
+</body>
+</html>
