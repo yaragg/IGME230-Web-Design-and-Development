@@ -174,6 +174,10 @@ figure{
 	background-image: url('../images/asteroids_thumb.png');
 }
 
+#tracery{
+	background-image: url('../images/tracery_thumb.png');
+}
+
 .project .pic-link{
 	position: absolute;
 	width: 100%;
