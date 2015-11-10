@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Yara Grassi Gouffon</title>
+	<style type="text/css">
+		h1, h2{
+			font-family: verdana, tahoma, sans-serif;
+		}
+		body{
+			margin-left: 10px;
+			margin-right: 10px;
+			background-color: #999;
+		}
+		#content{
+			background-color: #ddd;
+			padding: 3px 10px 3px 10px;
+			width: 225px;
+		}
+		footer{
+			display: block;
+			color: gray;
+			text-align: center;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function init(){
+			var myH1 = document.querySelector("h1");
+			myH1.innerHTML = "Films!!!!!!";
+			myH1.style.color = "red";
+			myH1.style.backgroundColor = "yellow";
+			document.querySelector("footer").innerHTML = "Copyright 2015 Yara Grassi Gouffon";
+			document.querySelector("p").innerHTML = "Welcome to Yara's Page!"
+
+			var redButton = document.querySelector("#redButton");
+			redButton.onclick = makeRed;
+			document.querySelector("#greenButton").onclick = makeGreen;
+			document.querySelector("#italicButton").onclick = makeItalic
+
+			document.querySelector("h1").setAttribute("title", "title creates tool tips");
+			document.querySelector("a").setAttribute("href", "http://www.bing.com");
+		}
+		function makeRed(){
+			document.querySelector("body").style.backgroundColor = "red";
+		}
+		function makeGreen(){
+			document.querySelector("body").style.backgroundColor = "green";
+		}
+		function makeItalic(){
+			document.querySelector("h1").style.fontStyle = "italic";
+			document.querySelector("h2").style.fontStyle = "italic";
+		}
+		window.onload = init;
+	</script>
+</head>
+<body>
+
+<div id="content">
+	<h1>Movies!</h1>
+	<p>Welcome to my movie page!</p>
+	<h2>My favorites!</h2>
+	<ul>
+		<li>Adaptation</li>
+		<li>Birdemic</li>
+		<li>Care Bears</li>
+	</ul>
+	<button id="redButton">Make red</button>
+	<button id="greenButton">Make green</button>
+	<button id="italicButton">Italic</button>
+	<p><a href="http://www.google.com">go to Google</a></p>
+	<footer>Copyright 2013 Nobody</footer>
+</div>
+
+</body>
+</html>
