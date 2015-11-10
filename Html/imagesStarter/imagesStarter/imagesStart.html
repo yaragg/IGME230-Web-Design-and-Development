@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>image play!</title>
+<style type="text/css">
+	  /*big image placement*/
+	  #bigPlace {position:absolute; top:115px; left:22px;}
+	  body{background:#999966;}
+	  .table { position:absolute;
+	   left:10px; 
+	   top:380px;
+	   z-index:70;
+	   padding:3px;
+	   border-bottom-width:3px; 
+	   border-left-width: 3px; 
+	   border-right-width: 3px; 
+	   border-top-width: 3px; 
+	   border-style: outset; 
+	   border-color:#336699; 
+	  }
+</style>
+<script type="text/javascript">
+	//preload images!
+	var path ="media/";
+	var newImage = new Array(); //Could be just newImage = [];
+	var picLoc = 115;
+
+	function loadImg(numImg){ //Preloads all images so you don't run into the problem of mousing over something and it takes a long time to load
+		for(var i=1; i<=numImg; i++){
+			newImage[i] = new Image();
+			newImage[i].src = path + "gal" + i + "Big.jpg";
+		}
+	}
+
+	window.onload = function(){
+		if(document.images){ // Only needed for REALLY old browsers
+			loadImg(document.images.length-1);
+		}
+	};
+
+	function changeMe(which){
+		var start = which.indexOf('/gal')+4;
+		var end = which.indexOf('.jpg');
+		var num = which.substring(start, end);
+		document.getElementById("bigPic").src = newImage[num].src;
+		// picLoc -= 10;
+		// document.getElementById("bigPlace").style.top = picLoc + "px";
+	}
+
+
+</script>
+</head>
+<body>
+    <!--Big Pics-->
+    <div id="bigPlace">
+        <img src="media/gal1Big.jpg" name="bigPic" alt="big pics!" id="bigPic" />
+    </div><!--div holding all of the thumbs-->
+    <div class="table">
+        <div id="loader" style="height:90px; width:400px; overflow:auto; white-space: nowrap;">
+            <img src="media/gal1.jpg" border="0" onmouseover="this.style.cursor='pointer';" onclick="changeMe(this.src);" alt="image"/> 
+            <img src="media/gal2.jpg" border="0" onmouseover="this.style.cursor='pointer';" onclick="changeMe(this.src);" alt="image"/> 
+            <img src="media/gal3.jpg" border="0" onmouseover="this.style.cursor='pointer';" onclick="changeMe(this.src);" alt="image"/> 
+            <img src="media/gal4.jpg" border="0" onmouseover="this.style.cursor='pointer';" onclick="changeMe(this.src);" alt="image"/> 
+            <img src="media/gal5.jpg" border="0" onmouseover="this.style.cursor='pointer';" onclick="changeMe(this.src);" alt="image"/> 
+            <img src="media/gal6.jpg" border="0" onmouseover="this.style.cursor='pointer';" onclick="changeMe(this.src);" alt="image"/> 
+        </div>
+    </div>
+</body>
+</html>
