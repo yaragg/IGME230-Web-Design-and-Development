@@ -202,6 +202,33 @@ figure{
 	color: #420246;
 }
 
+/*#pt-br{
+	position: absolute;
+	right: 1%;
+	top: 2%;
+}
+
+#en{
+	position: absolute;
+	right: 6%;
+	top: 2%;
+}*/
+
+#flags{
+	position: absolute;
+	right: 1%;
+	top: 2%;
+}
+
+#en{
+	position: relative;
+	right: 10%;
+}
+
+#flags-text{
+	display: none;
+}
+
 @media screen and (max-width: 480px){
 /*	footer{
 		display: block; 
@@ -273,5 +300,36 @@ figure{
 		margin: auto;
 		margin-bottom: 3%;
 	}
+
+	#flags{
+		position: static;
+		margin: auto;
+		width: 100%;
+		background-color: #FFF;
+	}
+	#en{
+		position: static;
+		margin: auto;
+	}
+	#pt-br{
+		position: static;
+		margin: auto;
+	}
+
+/*	#flags{
+		display: none;
+	}
+
+	#flags-text{
+		display: block;
+		position: absolute;
+		right: 6%;
+		top: 1%;
+		width: 100%;
+	}
+
+	#flags-text a{
+		margin-right: 5%;
+	}*/
 
 }
