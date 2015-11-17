@@ -71,7 +71,12 @@ section{
 #profile{
 	float: right;
 	border-radius: 40px;
-	margin-left: 0.5em;*/
+	margin-left: 0.5em;
+}
+
+#logo{
+	position: absolute;
+	top: 2%;
 }
 
 .screenshot{
@@ -178,6 +183,14 @@ figure{
 	background-image: url('../images/tracery_thumb.png');
 }
 
+#random{
+	background-image: url('../images/random_thumb.png');
+}
+
+#wars{
+	background-image: url('../images/robot_wars_thumb.png');
+}
+
 .project .pic-link{
 	position: absolute;
 	width: 100%;
@@ -202,18 +215,6 @@ figure{
 	color: #420246;
 }
 
-/*#pt-br{
-	position: absolute;
-	right: 1%;
-	top: 2%;
-}
-
-#en{
-	position: absolute;
-	right: 6%;
-	top: 2%;
-}*/
-
 #flags{
 	position: absolute;
 	right: 1%;
@@ -230,16 +231,6 @@ figure{
 }
 
 @media screen and (max-width: 480px){
-/*	footer{
-		display: block; 
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		background-color: #ebce94;
-		text-align: center;
-		border-radius: 10px 10px 0 0;
-	}*/
-
 	nav ul li, nav ul li a{
 		width: 100%;
 		display: block;
@@ -250,8 +241,8 @@ figure{
 		width: 94%;
 		border-radius: 1em;
 		border:none;
-		padding-top: 0.6em;
-		padding-bottom: 0.6em;
+		padding-top: 1em;
+		padding-bottom: 1em;
 		margin-bottom: 0.5em;
 	}
 
@@ -300,22 +291,6 @@ figure{
 		margin: auto;
 		margin-bottom: 3%;
 	}
-
-/*	#flags{
-		position: static;
-		margin: auto;
-		width: 100%;
-		text-align: center;
-		margin-top: -0.8em;
-		margin-bottom: 0.5em;
-	}
-	#en, #pt-br, #en img, #pt-br img{
-		position: static;
-		margin: auto;
-	}
-	#en{
-		margin-right: 0.8em;
-	}*/
 
 	#flags{
 		right: 0;
