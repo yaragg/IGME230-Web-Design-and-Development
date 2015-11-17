@@ -232,3 +232,15 @@ nav ul li a:hover {
     margin-right: 15%;
     margin-bottom: 1.5em;
 }
+
+#artContent{
+    display: none;
+}
+
+#progContent img, #artContent img{
+    cursor: pointer;
+}
+
+#aboutMe{
+    display: none;
+}

@@ -9,7 +9,6 @@
         "use strict";
         $(document).ready(function(){
             $("img").on("click", function(e){
-                console.log("clicked");
                 var lightbox = document.createElement("div");
                 lightbox.style.position = "fixed";
                 lightbox.style.height = "100%";
@@ -32,6 +31,11 @@
                     document.body.appendChild(lightbox);
                     $(lightbox).fadeIn(200);
                 };
+                lightbox.addEventListener("click", function(e){
+                    $(lightbox).fadeOut(200, function(){
+                        lightbox.remove();
+                    });
+                });
             });
         });
 

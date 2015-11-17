@@ -4,15 +4,37 @@
     <meta charset="utf-8"/>
     <title>My Dynamic Site</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#social").on("click", function(e){
+                $("#aboutMe").slideUp();
+                $("#socialMedia").slideDown();
+                $("#about").removeClass("selected");
+                $("#social").addClass("selected");
+            });
+
+            $("#about").on("click", function(e){
+                $("#socialMedia").slideUp();
+                $("#aboutMe").slideDown();
+                $("#social").removeClass("selected");
+                $("#about").addClass("selected");
+            });
+        });
+    </script>
 </head>
 <body>
     <nav id="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>    
             <li><a href="#" class="selected">Contact</a></li>            
+        </ul>
+    </nav>
+    <nav id="sub">
+        <ul>
+            <li><a id="social" href="#" class="selected">Social Media</a></li>
+            <li><a id="about" href="#">About</a></li>
         </ul>
     </nav>
     <section id="content">
@@ -34,6 +56,28 @@
             </p>
             <a href="#"><img class="icon" src="images/twitter.jpg" alt="linkedin"/></a>
         </section>
+
+        <figure id="aboutMe" class="project">
+            <figcaption class="profile">
+                I am a hard working passionate person. I am captain of captain's club. I am interested in computers, media, video games, pocket monsters, kitchen appliances and mobile apps. </p><p>My hobbies are doing anything that's not social, playing online games and pretending I am a in a thriller movie while I am at grocery stores.
+                <p>
+                Here you will find some of my skills. 
+                    <ul>
+                        <li>C--</li>
+                        <li>DirectZ</li>
+                        <li>Jabba</li>
+                        <li>Cflat</li>
+                        <li>Brotoshop</li>
+                        <li>daBrush</li>
+                        <li>HTLMNOP</li>
+                        <li>C-ES-ES</li>
+                        <li>Jabbascript</li>
+                        <li>JQuarry</li>
+                    </ul>
+                </p>
+            </figcaption>
+            <img class="profilePic" src="images/zoidberg.jpg" alt="me"/>
+        </figure>
     </section>
 </body>
 </html>

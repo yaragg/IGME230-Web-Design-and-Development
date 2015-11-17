@@ -4,21 +4,69 @@
     <meta charset="utf-8"/>
     <title>My Dynamic Site</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+        "use strict";
+        $(document).ready(function(){
+            $("#art").on("click", function(e){
+                $("#progContent").hide();
+                $("#artContent").fadeIn();
+                $("#programming").removeClass("selected");
+                $("#art").addClass("selected");
+
+            });
+
+            $("#programming").on("click", function(e){
+                $("#artContent").hide();
+                $("#progContent").fadeIn();
+                $("#art").removeClass("selected");
+                $("#programming").addClass("selected");
+            });
+
+            $("img").on("click", function(e){
+                var lightbox = document.createElement("div");
+                lightbox.style.position = "fixed";
+                lightbox.style.height = "100%";
+                lightbox.style.width = "100%";
+                lightbox.style.left = 0;
+                lightbox.style.top = 0;
+                lightbox.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+                lightbox.style.display = "none";
+
+                var myImg = document.createElement("img");
+                myImg.src = e.target.src;
+
+                myImg.onload = function(){
+                    myImg.style.position = "absolute";
+                    var diffWidth = $(window).width()/2 - myImg.width/2;
+                    var diffHeight = $(window).height()/2 - myImg.height/2;
+                    myImg.style.left = diffWidth + "px";
+                    myImg.style.top = diffHeight + "px";
+                    lightbox.appendChild(myImg);
+                    document.body.appendChild(lightbox);
+                    $(lightbox).fadeIn(200);
+                };
+                lightbox.addEventListener("click", function(e){
+                    $(lightbox).fadeOut(200, function(){
+                        lightbox.remove();
+                    });
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <nav id="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#" class="selected">Projects</a></li>
-            <li><a href="about.html">About</a></li>    
             <li><a href="contact.html">Contact</a></li>            
         </ul>
     </nav>
     <nav id="sub">
         <ul>
-            <li><a href="#" class="selected">Programming</a></li>
-            <li><a href="art.html">Art</a></li>
+            <li><a href="#" id="programming" class="selected">Programming</a></li>
+            <li><a href="#" id="art">Art</a></li>
         </ul>
     </nav>
     <section id="content">
@@ -44,6 +92,24 @@
                     Here is a sweet command line that I typed stuff into once. It was pretty exciting. I typed words in and words came out. 10/10 would type in again. 
                 </figcaption>
                 <img class="landscape" src="images/terminal.png" alt="terminal"/>
+            </figure>
+        </section>
+
+        <section id="artContent">
+            <h1>Art</h1>
+            <figure class="model">
+                <figcaption>
+                    <h3>Spaceship Model</h3>
+                    Here is a spaceship model I made in MS paint using only a keyboard. It would have been up much better, but I only had 3 minutes. Overall, I think it really shows my passion for spaceships and concept art. 
+                </figcaption>
+                <img src="images/concept.jpg" alt="android"/>
+            </figure>
+            <figure class="model">
+                <figcaption>
+                    <h3>Robo-Knight Model</h3>
+                    Here is a model of a robot knight I made with watercolors. This was done with me throwing watercolor paints at a canvas. It just eventually turned out like this after throwing paint for maybe 5 minutes. 
+                </figcaption>
+                <img class="landscape" src="images/knight.jpg" alt="web"/>
             </figure>
         </section>
     </section>
