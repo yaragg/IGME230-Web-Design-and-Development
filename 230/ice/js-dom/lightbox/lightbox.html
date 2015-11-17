@@ -21,11 +21,20 @@
 
                 var myImg = document.createElement("img");
                 myImg.src = e.target.src;
+
+                myImg.onload = function(){
+                    myImg.style.position = "absolute";
+                    var diffWidth = $(window).width()/2 - myImg.width/2;
+                    var diffHeight = $(window).height()/2 - myImg.height/2;
+                    myImg.style.left = diffWidth + "px";
+                    myImg.style.top = diffHeight + "px";
+                    lightbox.appendChild(myImg);
+                    document.body.appendChild(lightbox);
+                    $(lightbox).fadeIn(200);
+                };
             });
         });
-        myImg.onload = function(){
-            
-        };
+
     </script>
 </head>
 <body>
