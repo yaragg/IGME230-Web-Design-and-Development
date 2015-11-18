@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+  <title>Image Gallery</title>
+   <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="js/jquery.flippy.min.js"></script>
+   <style>
+   		a:hover{
+   			opacity: 0.5;
+   			transition-property: opacity;
+   			transition-duration: 0.25s;
+   		}
+   		
+   		#controls{
+   			width:400px;
+   			margin-bottom: 0.5em;
+   		}
+   		
+   		#next{
+   			float:right;
+   		}
+        
+        .flipbox {
+          background-color: #28b9df;
+          width: 400px;
+          height: 300px;
+          margin-bottom: 15px;
+        }
+        
+        #flipbox2 {
+            cursor: pointer;
+        }
+        
+        #flipbox2 p {
+            text-align: center;
+            padding-top: 140px;
+            font-size: 1.3em;
+        }
+        
+   </style>
+</head>
+<body>
+    <section id="main">
+      <h1>Snapshots</h1>
+      <div id="controls">
+        <a href="#" id="previous" title="Previous Image">Previous</a>
+        <a href="#" id="next" title="Next Image">Next</a>
+      </div>
+      <div class="container">
+        <div class="flipbox-container box100">
+            <div id="flipbox1" class="flipbox">
+            </div>
+        </div>
+        <p id="description">A fireworks display</p>
+        <footer>
+            <p>Credit: Images and layout from: <a href="http://domscripting.com/book/">http://domscripting.com/book/</a></p>
+         </footer>
+        
+        <div class="flipbox-container box100">
+            <div id="flipbox2" class="flipbox">
+            </div>
+        </div>
+      </div>
+
+    </section>
+</body>
+</html>

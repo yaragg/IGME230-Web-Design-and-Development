@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+  <title>Image Gallery</title>
+   <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="js/jquery.slides.min.js"></script>
+   <style>
+   		a:hover{
+   			opacity: 0.5;
+   			transition-property: opacity;
+   			transition-duration: 0.25s;
+   		}
+   		
+   		#controls{
+   			width:400px;
+   			margin-bottom: 0.5em;
+   		}
+   		
+   		#next{
+   			float:right;
+   		}
+        
+        #slides {
+          display: none
+        }    
+        
+        .slidesjs-previous {
+            float: left;
+        }
+        
+        .slidesjs-next {
+            float:right;
+        }
+   </style>
+   <script>
+        "use strict";
+        
+        var captions = ["A fireworks display","A cup of black coffee","A red, red rose","The famous clock"];
+        
+        $(document).ready(function(){
+          $("#slides").slidesjs({
+            width: 400,
+            height: 300,
+            pagination:{
+              active: false
+            },
+            callback: {
+              complete: updateCaption
+            },
+            effect: {
+              slide: {
+                speed: 1000
+              }
+            }
+          });
+        });
+
+        function updateCaption(number){
+          var caption = captions[number-1];
+          $("#description").hide().text(caption).fadeIn();
+        }
+   </script>
+</head>
+<body>
+    <section id="main">
+      <h1>Snapshots</h1>
+      <div class="container">
+        <div id="slides">
+          <img src="images/fireworks.jpg" alt="A fireworks display">
+          <img src="images/coffee.jpg" alt="A cup of black coffee">
+          <img src="images/rose.jpg" alt="A red, red rose">
+          <img src="images/bigben.jpg" alt="The famous clock">
+        </div>
+      </div>
+      <p id="description">A fireworks display</p>
+      <footer>
+        <p>Credit: Images and layout from: <a href="http://domscripting.com/book/">http://domscripting.com/book/</a></p>
+     </footer>
+    </section>
+</body>
+</html>
