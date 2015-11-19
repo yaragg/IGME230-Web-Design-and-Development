@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<p>Contact me!</p>
+
+	<form method="post" action="formmail.php" name="ContactForm">
+		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+		<input type="hidden" name="recipients" value="yxg5358@rit.edu" />
+
+		<!-- Complete this! -->
+		<input type="hidden" name="required" value="" />
+
+		<input type="subject" name="IGME 230 Website Contact Form" />
+	</form>
+</body>
+</html>
