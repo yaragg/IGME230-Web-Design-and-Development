@@ -1,0 +1,5 @@
+<footer>
+<p>&copy; <!--#config timefmt="%Y"--><!--#echo var="DATE_LOCAL"--> Yara Grassi Gouffon</p>
+<p>All rights reserved</p>
+<p><a href='<!--#echo var="HTTP_REFERER"-->'>Back</a></p>
+</footer>

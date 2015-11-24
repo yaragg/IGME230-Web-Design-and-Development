@@ -1,0 +1,5 @@
+<header>
+<p>Welcome!</p>
+<p>In case you've been under a rock, this is <!--#config timefmt="%B %d, %Y"--><!--#echo var="DATE_LOCAL"-->.</p>
+<p>Your IP is <!--#echo var="REMOTE_ADDR"--> and the server IP is <!--#echo var="SERVER_ADDR"-->.</p>
+</header>
