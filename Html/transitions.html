@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animations</title>
+
+	<style type="text/css">
+		#circle{
+			width: 100px;
+			height: 100px;
+			background-color: #722f37;
+			border-radius: 50px;
+			transition: width 2s, background-color 2s, height 1s;
+		}
+		#circle:hover{
+			width: 500px;
+			height: 200px;
+			background-color: lime;
+		}
+		#thing{
+			transition: opacity 10s;
+		}
+		#thing:hover{
+			opacity: 0;
+		}
+		.menu{
+			background-color: red;
+			color: yellow;
+			width: 200px;
+			height: 1em;
+			overflow: hidden;
+			transition: height 0.5s;
+		}
+		.menu:hover{
+			height: 6em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="circle"></div>
+<img id="thing" src="Ferd.png" alt="Ferd"/>
+
+<div class="menu">
+	Choose one:
+	<ul>
+		<li>First</li>
+		<li>Second</li>
+		<li>Third</li>
+	</ul>
+</div>
+
+</body>
+</html>

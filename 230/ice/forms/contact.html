@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Contact</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../../style.css" />
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<p>Contact me!</p>
+	<h1>Contact me!</h1>
 
 	<form method="post" action="formmail.php" name="ContactForm">
 		<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
@@ -17,7 +17,16 @@
 		<!-- Complete this! -->
 		<input type="hidden" name="required" value="" />
 
-		<input type="subject" name="IGME 230 Website Contact Form" />
+		<input type="hidden" name="subject" value="IGME 230 Website Contact Form" />
+
+		<p>Name: <input type="text" name="Name" /></p>
+		<p>E-mail: <input type="text" name="Email" /></p>
+		<p>Role:</p>
+		<p>Student <input type="radio" name="Role" value="Student" checked="checked" />Teacher <input type="radio" name="Role" value="Teacher" />Other <input type="radio" name="Role" value="Other" /></p>
+		<p>Comment:</p> 
+		<p><textarea name="Comment" rows="10" cols="50"></textarea></p>
+
+		<input type="submit" value="Submit" />
 	</form>
 </body>
 </html>
