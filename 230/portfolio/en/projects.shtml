@@ -31,7 +31,7 @@
 		<a class="name" href="robot_wars.html">Robot Wars</a>
 	</div>
 </section>
-
+<footer>Last updated: <!--#flastmod file="projects.shtml"--></footer>
 <script>
 	document.querySelector("h1").innerHTML = "Projects";
 	document.querySelector("title").innerHTML = "Projects";
