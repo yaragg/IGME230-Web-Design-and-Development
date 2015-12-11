@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<img id="logo" src="../images/logo.png" width="72" height="77" alt="Logo" />
+<a href="index.html"><img id="logo" src="../images/logo.png" width="72" height="77" alt="Logo" /></a>
 
 <div id="flags">
 	<a id="en" class="flag" href="../en/"><img src="../images/en.png" width="52" height="52" title="Display in English" alt="US flag" /></a>
