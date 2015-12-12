@@ -8782,7 +8782,7 @@ function RunTest($s_test,$a_vars)
 				} else {
 					$s_value = "";
 				}
-				//echo "<p>Pattern: '".htmlspecialchars($s_pat)."': count=".preg_match($s_pat,$s_value)."<br /></p>";
+				//echo "<p>Pattern: '".shtmlspecialchars($s_pat)."': count=".preg_match($s_pat,$s_value)."<br /></p>";
 				//
 				// match the regular expression
 				//
@@ -10513,7 +10513,7 @@ function FixSelect($s_name,$s_value,$s_buf)
 	$s_pat .= '"[^>]*)>';
 	$s_pat .= '/ims';
 	$s_repl = '$1 selected="selected">';
-	//  echo "<p>pat: ".htmlspecialchars($s_pat);
+	//  echo "<p>pat: ".shtmlspecialchars($s_pat);
 	$s_buf = preg_replace($s_pat,$s_repl,$s_buf);
 
 	return ($s_buf);
@@ -10539,7 +10539,7 @@ function FixMultiSelect($s_name,$a_values,$s_buf)
 		$s_pat .= '"[^>]*)>';
 		$s_pat .= '/ims';
 		$s_repl = '$1 selected="selected">';
-		//  echo "<p>pat: ".htmlspecialchars($s_pat);
+		//  echo "<p>pat: ".shtmlspecialchars($s_pat);
 		$s_buf = preg_replace($s_pat,$s_repl,$s_buf);
 	}
 	return ($s_buf);
@@ -12895,7 +12895,7 @@ function DetectManyURLsAttack($a_fields,&$s_attack,&$s_info,&$s_user_info)
 			/*
              * debugging code....
              if ($n_match > 0)
-                echo "Pattern is '".htmlentities($s_srch)."' with '".
+                echo "Pattern is '".shtmlentities($s_srch)."' with '".
                     htmlentities($s_data)."' field '$s_fld', matched=$n_match<br />";
              */
 			if (Settings::get('ATTACK_DETECTION_MANY_URLS') > 0) {
