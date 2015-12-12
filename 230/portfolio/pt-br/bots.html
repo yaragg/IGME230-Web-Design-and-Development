@@ -4,7 +4,23 @@
 	<title>We Only Missed the Bots</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="../css/style.css" 
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- fancybox plugin JS includes-->
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
+</head> 
 </head>
 <body>
 
@@ -36,8 +52,48 @@
 	<p>O conceito original do jogo foi desenvolvido através do RPG MAker XP, mas o jogo ele mesmo foi feito no <em>Construct 2</em>. É possível baixá-lo através da <a href="http://globalgamejam.org/2015/games/we-only-missed-bots">página do projeto</a> ou do <a href="https://github.com/mvcds/global-game-jam-2015">repositório</a>. Também é possível <a href="https://db.tt/0RxvCElS">jogá-lo online</a>.</p>
 </section>
 
-<img class="screenshot" src="../images/bots_screenshot.png" alt="Screenshot of gameplay." width="562" height="400" />
+<div id="gallery"></div>
 
+<section>
+	<h2>Trilha sonora</h2>
+	Ouça algumas das músicas do jogo!
+	<ul id="sound">
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/3.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/4.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/010.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/012.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+
+		<li>
+			<audio controls>
+			  <source src="https://dl.dropboxusercontent.com/u/92536541/portfolio_music/015.mp3" type="audio/mpeg">
+			  Seu navegador não suporta elementos de aúdio.
+			</audio>
+		</li>
+	</ul>
+</section>
 
 <section>
 	<h2>Desafios</h2>
@@ -78,4 +134,7 @@
 <footer>&copy; 2015 Yara Grassi Gouffon</footer>
 
 </body>
+<script>
+appendGalleryPictures("bots", 5);
+</script>
 </html>

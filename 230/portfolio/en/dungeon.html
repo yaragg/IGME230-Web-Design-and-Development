@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- fancybox plugin JS includes-->
 	<!-- Add mousewheel plugin (this is optional) -->
 	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
@@ -16,6 +18,7 @@
 	<!-- Add Button helper (this is optional) -->
 	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
 	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
 
@@ -50,15 +53,6 @@
 </section>
 
 <div id="gallery"></div>
-
-<!-- <a class="fancybox" rel="screenshots" href="../images/dungeon_screenshot.png"><img class="screenshot" src="../images/dungeon_screenshot.png" alt="" /></a>
-
-<a style="display: none;" class="fancybox" rel="screenshots" href="../images/dungeon_screenshot2.png"><img class="screenshot" src="../images/dungeon_screenshot2.png" alt="" /></a> -->
-
-
-<!-- <img class="screenshot" src="../images/dungeon_screenshot.png" alt="Screenshot of gameplay." width="549" height="418" title="Screenshot of dungeon exploration"/>
-
-<img class="screenshot" src="../images/dungeon_screenshot2.png" alt="Screenshot of gameplay." width="549" height="418" title="Screenshot of monster battle"/> -->
 
 <section>
 	<h2>Challenges</h2>
@@ -96,33 +90,6 @@
 </body>
 
 <script>
-
-$('.fancybox').fancybox({
-	openEffect  : 'none',
-	closeEffect : 'none',
-
-	prevEffect : 'none',
-	nextEffect : 'none',
-
-	closeBtn  : true,
-	// closeClick : true,
-
-	helpers : {
-		title : {
-			type : 'inside'
-		},
-		// buttons	: {}
-	},
-
-	afterLoad : function() {
-		this.title = 'Screenshot ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-	}
-});
-
-for(var i=1; i<7; i++){
-	$("#gallery").append("<a class='fancybox' rel='screenshots' href='../images//dungeon/dungeon"+i+".png'><img class='screenshot' src='../images/dungeon/dungeon"+i+".png' alt='' /></a>");
-}
-
-// document.querySelector()
+appendGalleryPictures("dungeon", 7);
 </script>
 </html>

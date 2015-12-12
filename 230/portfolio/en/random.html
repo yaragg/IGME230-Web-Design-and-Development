@@ -4,7 +4,22 @@
 	<title>Rolling on Random</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="../css/style.css" 
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- fancybox plugin JS includes-->
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
 
@@ -36,11 +51,12 @@
 	<p>It was written in <em>Processing</em>. We were asked to make an animation with randomly generated elements: in my case, the birds' movement follows two Perlin noise sequences, the clouds are generated using directed randomness and the trees are created using a Gaussian curve.</p>
 </section>
 
-<img class="screenshot" src="../images/random_screenshot.png" alt="Screenshot of animation." width="500" height="500" />
-<img class="screenshot" src="../images/random_screenshot2.png" alt="Screenshot of animation." width="500" height="500" />
-
+<div id="gallery"></div>
 
 <footer>&copy; 2015 Yara Grassi Gouffon</footer>
 
 </body>
+<script>
+appendGalleryPictures("random", 4);
+</script>
 </html>

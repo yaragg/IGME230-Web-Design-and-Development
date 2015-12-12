@@ -4,7 +4,22 @@
 	<title>Robot Wars</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="../css/style.css" 
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- fancybox plugin JS includes-->
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
 </head>
 <body>
 
@@ -38,10 +53,13 @@
 	<p>Due to not being entirely sure how copyright applies to some of the images we used in this project, I can't display screenshots of the battles themselves here. Instead, the image below shows a script written for a robot with an aggressive behavior that wanders the field in search of an enemy to attack.</p>
 </section>
 
-<img class="screenshot" src="../images/robot_wars_screenshot.png" alt="Screenshot of code." width="650" height="400" />
+<div id="gallery"></div>
 
 
 <footer>&copy; 2015 Yara Grassi Gouffon</footer>
 
 </body>
+<script>
+appendGalleryPictures("robot_wars", 1);
+</script>
 </html>

@@ -4,7 +4,22 @@
 	<title>Asteroids</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="../css/style.css" 
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- fancybox plugin JS includes-->
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="../js/script.js"></script> 
 </head>
 <body>
 
@@ -36,10 +51,12 @@
 	<p>Foi escrito em <em>Processing</em> e a ideia era fazer uma versão modernizada do clássico do arcade Asteroids.</p>
 </section>
 
-<img class="screenshot" src="../images/asteroids_screenshot.png" alt="Screenshot of gameplay." width="598" height="595" />
-
+<div id="gallery"></div>
 
 <footer>&copy; 2015 Yara Grassi Gouffon</footer>
 
 </body>
+<script>
+appendGalleryPictures("asteroids", 4);
+</script>
 </html>

@@ -86,17 +86,12 @@ section{
 }
 
 .screenshot{
-	/*width: 100%;*/
 	width: 200px;
 	height: auto;
-		/*margin-bottom: 5%;*/
-	/*display: none;*/
-	/*display: block;*/
 	margin: auto;
 	margin-bottom: 2%;
 	box-shadow: 7px 7px 5px #854889;
 	border-radius: 15px;
-
 }
 
 #gallery{
@@ -105,23 +100,15 @@ section{
 }
 
 .fancybox{
-		/*display: none;*/
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 12px;
 }
 
-/*.fancybox:nth-of-type(4), .fancybox:last-of-type{
-	clear: both;
-}*/
-
-/*.screenshot:first-of-type, .fancybox:first-of-type{
-	display: block;
-}*/
-
 footer{
 	text-align: center;
 	color: #56125B;
+	clear: both;
 }
 
 nav{
@@ -311,6 +298,10 @@ form p:nth-last-child(2){
 
 #sub ul li:last-child{
 	padding-right: 0;
+}
+
+#sound{
+	list-style-type: none;
 }
 
 @media screen and (max-width: 480px){
