@@ -9,9 +9,6 @@
 	<p>Meus passatempos incluem escrita, arte e música. Sou uma pessoa muito multidisciplinar e ficaria muito contente em fazer um pouco de tudo em um game!</p>
 
 	<p>Sinta-se à vontade para baixar <a href="../Yara_Grassi_Gouffon_Resume.pdf" target="_blank">meu currículo.</a></p>
-
-	<p>Para a matéria IGME-230: <a href="notes.shtml">aqui estão as notas</a>.</p>
-
 </section>
 <script>
 	document.querySelector("h1").innerHTML = "Portfólio da Yara";
